@@ -1,12 +1,11 @@
 
 jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
 // ハンバーガーメニュー
-const button = $(".js-button");
+const hamburger = $(".js-hamburger");
 const globalNav = $(".js-page-nav");
-const buttonBody = $(".js-button__body");
 
-button.on("click", function () {
-    buttonBody.toggleClass("is-active");
+hamburger.on("click", function () {
+    hamburger.toggleClass("is-open");
     globalNav.toggleClass("is-show");
 });
 

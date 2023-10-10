@@ -2,31 +2,35 @@
 
 .header {
     background-color: $black;
+    height: rem(50);
     box-shadow: 0 4px 4px #E5E5E5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .header__inner {
     padding-left: rem(22);
     padding-right: rem(22);
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     @include mq(md){
+        align-items: center;
         padding-left: rem(32);
         padding-right: 0;
     }
 }
 
 .header__contents {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    @include mq(md){
-        align-items: center;
-    }
+
 }
 
 .header__logo {
     max-width: rem(70);
     width: 100%;
-    padding: rem(12) 0;
 }
 
 .header__link {
@@ -48,9 +52,8 @@
     display: block;
 }
 
-.header__button {
+.header__drawer {
     display: block;
-    padding: 0 rem(20);
     @include mq(md){
         display: none;
     }
