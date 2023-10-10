@@ -13,7 +13,7 @@ $padding-sp: 20px;
 // フォント設定
 ////////////////////
 
-$base-font-family: "";
+$base-font-family: "Noto Sans JP', sans-serif";
 $second-font-family: "";
 // ※検証ツールでしっかり反映されているか確認する
 
@@ -31,5 +31,5 @@ $bold: 700;
 ////////////////////
 
 //色指定（共通性のあるものは出来る限り指定すると良い）
-$black: #111;
-$white: #fff;
+$black: #333333;
+$white: #FFFFFF;
