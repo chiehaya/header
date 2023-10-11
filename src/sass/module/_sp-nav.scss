@@ -1,0 +1,15 @@
+@use "global" as *;
+
+.sp-nav {
+    background-color: $black;
+    z-index: 8888;
+}
+
+.sp-nav__link {
+    display: block;
+    color: $white;
+    text-align: center;
+    padding-top: rem(16);
+    padding-bottom: rem(16);
+}
+
